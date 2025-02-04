@@ -15,35 +15,32 @@
         <br><br><br><br>
         <div class="row">
             <div class="card">
+                
                 <div class="card=body">
-                    <table class="table table-hover">
+                <button class="btn btn-success">Add Inventory </button>
+                    <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>Computer</td>
+                                <td>Lenovo</td>
+                                <td>80</td>
+                                <td>40,302.00</td>
+                                <td>
+                                <button class="btn btn-info">Edit </button>
+                                <button class="btn btn-danger">Delete </button>
+
+                                </td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                           
                         </tbody>
                     </table>
 
