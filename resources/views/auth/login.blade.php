@@ -13,14 +13,19 @@
 <div class="row">
     <div class="col-lg-12">
     <div class="col-lg-6">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+            
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Password</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your credentials with anyone else.</small>
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
     </div>
     </div>

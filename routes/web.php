@@ -8,4 +8,4 @@ Route::get('/', function () {
 
 
 Route::get('/login','App\Http\Controllers\LoginController@index');
-Route::get('/computer','App\Http\Controllers\ComputerController@index');
+Route::get('/inventory','App\Http\Controllers\InventoryController@index');
