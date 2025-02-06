@@ -13,7 +13,10 @@
 <div class="row">
     <div class="col-lg-12">
     <div class="col-lg-6">
-        <form method="POST" action="/login">
+
+        <div class="card">
+            <div class="card=body">
+            <form method="POST" action="/login">
             @csrf()
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
@@ -26,7 +29,13 @@
                 <small id="emailHelp" class="form-text text-muted">We'll never share your credentials with anyone else.</small>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            </form>
+
+
+            </div>
+        </div>
+                
+        
 
     </div>
     </div>
