@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('category_id');
             $table->string(column: 'item_name');
-            $table->integer(column: 'qty');
             $table->integer(column: 'price');
             $table->timestamps();
         });
@@ -29,3 +28,4 @@ return new class extends Migration
         Schema::dropIfExists('items');
     }
 };
+    
