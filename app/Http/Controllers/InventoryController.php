@@ -11,4 +11,18 @@ class InventoryController extends Controller
 
         return view("inventory.index");
     }
+
+
+    public function create(){
+
+        return view("inventory.create");
+
+    }
+    public function category(){
+
+        return view("inventory.category");
+
+    }
+
+
 }

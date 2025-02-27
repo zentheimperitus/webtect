@@ -39,20 +39,20 @@
             <div class="mb-3">
               <div class="form-group">
                 <label for="exampleInputPassword1">Item name:</label>
-                <input type="item name" class="form-control" id="exampleInputPassword1" placeholder="Item Name">
+                <input type="item name" class="form-control" id="itemname" placeholder="Item Name">
               </div>
     
     
             </div>
             <div class="mb-3">
               <div class="form-group">
-                <label for="exampleInputPassword1">Price</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Price">
+              <label for="exampleInputPassword1">Price:</label>
+                <input type="item name" class="form-control" id="price" placeholder="Price">
               </div>
               <div class="mb-3">
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Quantity</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Quantity">
+                <label for="exampleInputPassword1">Quantity:</label>
+                <input type="item name" class="form-control" id="qty" placeholder="Quantity">
                 </div>
                 <br>
                 <div class="text-center">
