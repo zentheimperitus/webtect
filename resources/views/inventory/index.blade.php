@@ -52,7 +52,7 @@
       <br /><br /><br /><br />
       <div class="row justify-content-center">
         <!-- Adjust column widths for responsiveness -->
-        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+        <div class="col-12 ">
           <div class="card">
             <div class="card-body">
               <div
@@ -67,22 +67,26 @@
                     <tr>
                       <th scope="col">Category</th>
                       <th scope="col">Item Name</th>
-                      <th scope="col">Qty</th>
                       <th scope="col">Price</th>
                       <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ( $items as $item )
+
                     <tr>
-                      <td>Computer</td>
-                      <td>Lenovo</td>
-                      <td>80</td>
-                      <td>40,302.00</td>
+                      
+                      
+                      <td>{{ $item-> category_id }}</td>
+                      <td>{{ $item-> item_name}}</td>
+                      <td>{{ $item-> price }}</td>
                       <td>
                         <button class="btn btn-info">Edit</button>
                         <button class="btn btn-danger">Delete</button>
                       </td>
+                      
                     </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>

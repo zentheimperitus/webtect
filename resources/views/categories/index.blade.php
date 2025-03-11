@@ -14,13 +14,45 @@
   </head>
 
   <body>
-    
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inventory System</a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/category"
+                    >Categories</a
+                >
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/inventory"
+                    >Inventory</a
+                >
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/login">Logout</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
 
     <div class="container">
       <br /><br /><br /><br />
       <div class="row justify-content-center">
         <!-- Adjust column widths for responsiveness -->
-        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+        <div class="col-12 ">
           <div class="card">
             <div class="card-body">
               <div
@@ -39,14 +71,19 @@
                     </tr>
                   </thead>
                   <tbody>
+
+                  @foreach ( $categories as $category )
                     <tr>
-                      <td>Technology</td>
-                      <td>Latest gadgets and software.</td>
+                
+                      <td>{{ $category-> category_name }}</td>
+                      <td>{{ $category-> description }}</td>
                       <td>
                         <button class="btn btn-info">Edit</button>
                         <button class="btn btn-danger">Delete</button>
                       </td>
                     </tr>
+                    @endforeach
+
                   </tbody>
                 </table>
               </div>
